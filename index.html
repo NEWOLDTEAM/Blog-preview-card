@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --mobile-width: 375px;
+      --desktop-width: 1440px;
+      --primary-color: hsl(47, 88%, 63%);
+      --neutral-white: hsl(0, 0%, 100%);
+      --neutral-grey: hsl(0, 0%, 50%);
+      --neutral-black: hsl(0, 0%, 7%);
+    }
+    * {
+      box-sizing: border-box;
+      font-family: system-ui;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--primary-color);
+      height: 100vh;
+      margin: 0;
+    }
+
+    body p {
+      font-size: 16px;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    a {
+      font-weight: 800;
+      text-decoration: none;
+      color: var(--neutral-black);
+    }
+
+    .primary-container:has(.link:hover){
+      box-shadow: 15px 15px 0px 0px var(--neutral-black);
+    }
+    .link:hover a{
+      color: var(--primary-color);
+    }
+    .date p {
+      color: var(--neutral-black);
+    }
+
+    .label {
+      width: fit-content;
+      padding: .5em;
+      border-radius: 5px;
+      background-color: var(--primary-color);
+      font-weight: 800;
+    }
+
+    .description {
+      color: var(--neutral-grey);
+    }
+
+    .primary-container {
+      background-color: var(--neutral-white);
+      border: solid 2px var(--neutral-black);
+      border-radius: 15px;
+      width: min-content;
+      padding: 1.5rem;
+
+      margin: 4em auto;
+
+      box-shadow: 10px 10px 0px 0px var(--neutral-black);
+    }
+
+    .image {
+      border-radius: 15px;
+    }
+
+    .profile {
+      font-weight: 800;
+      margin-top: 2em;
+    }
+
+    .profile img {
+      vertical-align: middle;
+      width: 2em;
+    }
+
+    .name{
+      margin: .5em;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="primary-container">
+    <img src="assets/images/illustration-article.svg" alt="" class="image">
+    <p class="label">
+      Learning
+    </p>
+    <p class="date">
+      Published 21 Dec 2023
+    </p>
+    <h2 class="link">
+      <a href="#">
+        HTML & CSS foundations
+      </a>
+    </h2>
+    <p class="description">
+      These languages are the backbone of every
+      website, defining structure, content, and
+      presentation.
+    </p>
+
+    <div class="profile">
+      <img src="assets/images/image-avatar.webp" alt="">
+      <span class="name">Greg Hooper</span>
+    </div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">NEWOLDTEAM</a>.
+  </div>
+</body>
+
+</html>
